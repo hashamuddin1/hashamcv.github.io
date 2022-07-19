@@ -1,13 +1,13 @@
 //add experience's fields by click on add button
 function addexpfield() {
-    document.getElementById('item3').innerHTML += '<div><label>Company Name</label></div><div><input type="text" class="inp exp cname" autocomplete="off" name="cname"></div><div><label>Starting Date</label></div><div><input type="date" class="inp exp startdate" autocomplete="off" name="startdate"></div><div><label>Ending Name</label></div><div><input type="date" class="inp exp enddate" autocomplete="off" name="enddate"></div>'
+    document.getElementById('item3').innerHTML += '<div><label>Company Name</label></div><div><input type="text" class="inp exp cname" autocomplete="off" name="cname"></div><div><label>Starting Date</label></div><div><input type="date" class="inp exp startdate" autocomplete="off" name="startdate"></div><div><label>Ending Date</label></div><div><input type="date" class="inp exp enddate" autocomplete="off" name="enddate"></div>'
 }
 
 addexp.addEventListener('click', addexpfield)
 
 //add education field by click on add button
 function addedufield() {
-    document.getElementById('item5').innerHTML += '<div><label>Institude Name</label></div><div><input type="text" class="inp exp iname" autocomplete="off" name="iname"></div><div><label>Degree Name</label></div><div><input type="text" class="inp exp dname" autocomplete="off" name="dname"></div><div><label>Starting Date</label></div><div><input type="date" class="inp exp edustartdate" autocomplete="off" name="edustartdate"></div><div><label>Ending Name</label></div><div><input type="date" class="inp exp eduenddate" autocomplete="off" name="eduenddate"></div>'
+    document.getElementById('item5').innerHTML += '<div><label>Institude Name</label></div><div><input type="text" class="inp exp iname" autocomplete="off" name="iname"></div><div><label>Degree Name</label></div><div><input type="text" class="inp exp dname" autocomplete="off" name="dname"></div><div><label>Starting Date</label></div><div><input type="date" class="inp exp edustartdate" autocomplete="off" name="edustartdate"></div><div><label>Ending Date</label></div><div><input type="date" class="inp exp eduenddate" autocomplete="off" name="eduenddate"></div>'
 }
 
 addedu.addEventListener('click', addedufield);
