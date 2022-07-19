@@ -21,7 +21,7 @@ addskill.addEventListener('click', addskillfield);
 
 //add certificate field by click on add button
 function addcertificatefield() {
-    document.getElementById('item9').innerHTML += '<div><label>Institude Name</label></div><div><input type="text" class="inp exp icname" autocomplete="off" name="icname"></div><div><label>Issue Date</label></div><div><input type="date" class="inp exp certstartdate" autocomplete="off" name="certstartdate"></div><div><label>Description</label></div><div><input type="date" class="inp exp certdescription" autocomplete="off" name="certdescription">'
+    document.getElementById('item9').innerHTML += '<div><label>Institude Name</label></div><div><input type="text" class="inp exp icname" autocomplete="off" name="icname"></div><div><label>Issue Date</label></div><div><input type="date" class="inp exp certstartdate" autocomplete="off" name="certstartdate"></div><div>'
 }
 
 addcertificate.addEventListener('click', addcertificatefield);
