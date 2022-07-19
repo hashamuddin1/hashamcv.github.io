@@ -1,0 +1,123 @@
+.container {
+    width: 30%;
+    margin: auto;
+    color: orangered;
+}
+
+#main {
+    width: 70%;
+    height: 620px;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.content1 {
+    width: 70%;
+    height: 100px;
+    margin: auto;
+}
+
+#wrapper {
+    height: 430px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-column-gap: 10px;
+    margin-top: 10px;
+}
+
+#main ul {
+    list-style: none;
+}
+
+.content2 {
+    border: 1px solird orangered;
+    border-radius: 15px;
+    background-color: orangered;
+    color: white;
+    padding-left: 5px;
+    grid-row: 1/8;
+    grid-column: 1/2;
+}
+
+.content3 {
+    grid-row: 1/8;
+    grid-column: 2/4;
+}
+
+.content4 {
+    grid-row: 1/8;
+    grid-column: 4/-1;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+}
+
+#item3 {
+    margin-top: 15px;
+}
+
+#item5 {
+    margin-top: 15px;
+}
+
+#item9 {
+    margin-top: 15px;
+}
+
+.item6 {
+    margin-bottom: 15px;
+}
+
+.item10 {
+    margin-bottom: 15px;
+}
+
+.inp {
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
+
+.inp:focus {
+    outline: none !important;
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
+
+.exp {
+    width: 100%;
+}
+
+.btn {
+    border: 2px solid orangered;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    color: orangered;
+    background-color: white;
+    cursor: pointer;
+}
+
+.addbtn {
+    border: 2px solid orangered;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    color: white;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+#btndiv {
+    width: 50%;
+    margin: 15px auto;
+}
+
+.selectskill {
+    background-color: orangered;
+    color: white;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+
+<body>
+    <form autocomplete="off" onsubmit="event.preventDefault();">
+        <div class="container">
+            <!-- personal information -->
+            <h2>Personal Information</h2>
+            <div class="item item1">
+
+                <div><label>First Name</label></div>
+                <div><input type="text" class="inp exp" autocomplete="off" name="fname" id="fname"></div>
+                <div><label>Last Name</label></div>
+                <div><input type="text" class="inp exp" autocomplete="off" name="lname" id="lname"></div>
+                <div><label>Father Name</label></div>
+                <div><input type="text" class="inp exp" autocomplete="off" name="fathername" id="fathername"></div>
+                <div><label>Email</label></div>
+                <div><input type="email" class="inp exp" autocomplete="off" name="email" id="email"></div>
+                <div><label>Address</label></div>
+                <div><input type="text" class="inp exp" autocomplete="off" name="address" id="address"></div>
+                <div><label>Contact</label></div>
+                <div><input type="text" class="inp exp" autocomplete="off" name="contact" id="contact"></div>
+                <div><label>Profile Description</label></div>
+                <div><input type="text" class="inp exp" autocomplete="off" name="description" id="description"></div>
+            </div>
+
+            <!-- experience -->
+            <div class="item item2">
+                <h2>Experience</h2>
+                <button id="addexp" class="addbtn">Add</button>
+                <div><label>Company Name</label></div>
+                <div><input type="text" class="inp exp cname" autocomplete="off" name="cname"></div>
+                <div><label>Starting Date</label></div>
+                <div><input type="date" class="inp exp startdate" autocomplete="off" name="startdate"></div>
+                <div><label>Ending Name</label></div>
+                <div><input type="date" class="inp exp enddate" autocomplete="off" name="enddate"></div>
+            </div>
+            <div class="item" id="item3"></div>
+
+            <!-- education -->
+            <div class="item item4">
+                <h2>Education</h2>
+                <button id="addedu" class="addbtn">Add</button>
+                <div><label>Institude Name</label></div>
+                <div><input type="text" class="inp exp iname" autocomplete="off" name="iname"></div>
+                <div><label>Degree Name</label></div>
+                <div><input type="text" class="inp exp dname" autocomplete="off" name="dname"></div>
+                <div><label>Starting Date</label></div>
+                <div><input type="date" class="inp exp edustartdate" autocomplete="off" name="edustartdate"></div>
+                <div><label>Ending Name</label></div>
+                <div><input type="date" class="inp exp eduenddate" autocomplete="off" name="eduenddate"></div>
+            </div>
+            <div class="item" id="item5"></div>
+
+            <!-- skills -->
+            <div class="item item6">
+                <h2>Skills</h2>
+                <button id="addskill" class="addbtn">ADD</button>
+                <div>
+                    <select class="selectskill">
+                        <option value="html5">Html 5</option>
+                        <option value="css3">Css 3</option>
+                        <option value="bootstrap">Bootstrap 5</option>
+                        <option value="javascript">javascript</option>
+                        <option value="php">Php</option>
+                        <option value="react">React</option>
+                        <option value="Angular">Angular</option>
+                        <option value="Python">Python</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Power BI">Power BI</option>
+                        <option value="Tableau">Tableau</option>
+                        <option value="TypeScript">TypeScript</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="Java">Java</option>
+                        <option value="C#">C#</option>
+                        <option value="ASP .net">ASP .net</option>
+                        <option value="Power Apps">Power Apps</option>
+                        <option value="Sharepoint">Sharepoint</option>
+                        <option value="Tkinter">Tkinter</option>
+                        <option value="Element.js">Element.js</option>
+                        <option value="Vue.js">Vue.js</option>
+                        <option value="Node.js">Node.js</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Laravel">Laravel</option>
+                        <option value="Express.js">Express.js</option>
+                        <option value="SQL">SQL</option>
+                        <option value="Mongo DB">Mongo DB</option>
+                        <option value="Graph QL">Graph QL</option>
+                        <option value="React Native">React Native</option>
+                        <option value="flutter">Flutter</option>
+                        <option value="dart">Dart</option>
+                        <option value="c++">C++</option>
+                        <option value="Microsoft Dynamics 365">Microsoft Dynamics 365</option>
+                        <option value="illustrator">Illustrator</option>
+                      </select>
+                </div>
+                <div></div>
+            </div>
+            <div class="item" id="item7"></div>
+
+            <!-- Certificate -->
+            <div class="item item8">
+                <h2>Certificate</h2>
+                <button id="addcertificate" class="addbtn">ADD</button>
+                <div><label>Institude Name</label></div>
+                <div><input type="text" class="inp exp icname" autocomplete="off" name="icname"></div>
+                <div><label>Issue Date</label></div>
+                <div><input type="date" class="inp exp certstartdate" autocomplete="off" name="certstartdate"></div>
+            </div>
+            <div class="item" id="item9"></div>
+            <!-- languages -->
+            <div class="item item10">
+                <h2>Languages</h2>
+                <button id="addlanguage" class="addbtn">ADD</button>
+                <div><label>Language</label></div>
+                <div><input type="text" class="inp exp lang" autocomplete="off" name="lang"></div>
+            </div>
+            <div class="item" id="item11"></div>
+            <!-- submit button -->
+
+            <!-- <div id="btndiv"><button class="btn" id="btnsub">Submit</button></div> -->
+
+        </div>
+    </form>
+
+    <div class="container">
+        <div id="btndiv">
+            <button class="btn" id="btncv">MY CV</button>
+        </div>
+
+    </div>
+
+    <div id="main">
+
+        <div id="header" class="content1"></div>
+        <div id="wrapper">
+            <div id="langandperinfo" class="content2"></div>
+            <div id="degeducer" class="content3"></div>
+            <div id="skillsadd" class="content4"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="btndiv">
+            <button class="btn" id="downloadcv">Download CV</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="formdata.js"></script>
+</body>
+
+</html>
